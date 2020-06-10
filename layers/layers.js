@@ -39,9 +39,9 @@ var lyr_shp_1 = new ol.layer.Vector({
 
 lyr_GCBA_0.setVisible(true);lyr_shp_1.setVisible(true);
 var layersList = [lyr_GCBA_0,lyr_shp_1];
-lyr_shp_1.set('fieldAliases', {'barrio': 'barrio', 'comuna': 'comuna', 'perimetro': 'perimetro', 'area': 'area', });
-lyr_shp_1.set('fieldImages', {'barrio': 'TextEdit', 'comuna': 'TextEdit', 'perimetro': 'TextEdit', 'area': 'TextEdit', });
-lyr_shp_1.set('fieldLabels', {'barrio': 'no label', 'comuna': 'inline label', 'perimetro': 'no label', 'area': 'no label', });
+lyr_shp_1.set('fieldAliases', {'barrio': 'barrio', 'Casos confirmados': 'comuna', });
+lyr_shp_1.set('fieldImages', {'barrio': 'TextEdit', 'Casos confirmados': 'TextEdit', });
+lyr_shp_1.set('fieldLabels', {'barrio': 'no label', 'Casos confirmados': 'inline label', });
 lyr_shp_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
